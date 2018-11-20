@@ -1,9 +1,10 @@
 #include "car.h"
 
-enum CarType get_type(Car car1){
+
+CarType get_type(CarType car1){
   return AIXAM;
 }
-enum Color get_color(Car car1){
+Color get_color(Car car1){
   return GREEN;
 }
 double get_fill_level(Car car1){
@@ -17,4 +18,10 @@ double get_speed(Car car1){
 }
 void init(){
 
+}
+void accelerate(Car car1){
+
+}
+double set_acceleration_rate(Car car1, double acceleration){
+  return 0.0;
 }

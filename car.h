@@ -19,13 +19,15 @@ enum Color {RED, GREEN, BLUE, ORANGE, SILVER, BLACK };
 enum CarType {AIXAM,FIAT_MULTIPLA, JEEP };
 typedef struct CarImplementation* Car;
 
-Car get_car(Car car1);
-enum CarType get_type(Car car1);
-enum Color get_color(Car car1);
+Car get_car(CarType car1);
+CarType get_type(Car car1);
+Color get_color(Car car1);
 double get_fill_level(Car car1);
 double get_acceleration_rate(Car car1);
 double get_speed(Car car1);
 void init();
+void accelerate(Car car1);
+double set_acceleration_rate(Car car1, double acceleration);
 
 
 #endif
